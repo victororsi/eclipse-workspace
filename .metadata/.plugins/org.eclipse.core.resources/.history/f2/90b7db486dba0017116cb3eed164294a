@@ -1,0 +1,10 @@
+
+public interface ServicoBancario {
+	double getSaldo(); 
+
+	void depositar(double valor); 
+	
+	void sacar(double valor) throws SaldoInsulficienteException;
+	
+	boolean transferir(Conta contaDestino, double valor);
+}

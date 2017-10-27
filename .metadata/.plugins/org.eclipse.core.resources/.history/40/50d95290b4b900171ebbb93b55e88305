@@ -1,0 +1,9 @@
+
+public class SistemaInterno {
+	public void autenticaUsuario(FuncionarioAutenticavel fa) {
+		String login = "user";
+		Strinf senha = "654";
+	}
+	
+
+}

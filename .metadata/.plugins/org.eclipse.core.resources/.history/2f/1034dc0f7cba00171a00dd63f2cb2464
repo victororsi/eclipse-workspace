@@ -1,0 +1,39 @@
+class Programa{
+	public static void main (String[] args){
+		Filme filme = new Filme();
+		filme.setCodigo (123);
+		filme.setNome ("A Era do Gelo");
+		filme.setValor (2.5);
+
+		Filme filme2 = new Filme();
+		filme2.setCodigo (1234);
+		filme2.setNome ("A Era do Gelo 2");
+		filme2.setValor (3.50);
+
+		Filme filme3 = new Filme();
+		filme3.setCodigo (12345);
+		filme3.setNome ("A Era do Gelo 3");
+		filme3.setValor (4.50);
+
+		Filme filme4 = new Filme();
+		filme4.setCodigo (123456);
+		filme4.setNome ("Ursinho Tedd");
+		filme4.setValor (3.50);
+
+		Filme filme5 = new Filme();
+		filme5.setCodigo (14434);
+		filme5.setNome ("Jorgos Mortais");
+		filme5.setValor (1.50);
+	
+		Filme filmes[] = new Filme[5];
+		filmes[0] = filme;
+		filmes[1] = filme2;
+		filmes[2] = filme3;
+		filmes[3] = filme4;
+		filmes[4] = filme5;
+
+		for (Filme film : filmes){
+			filme.mostra();
+		}
+	}
+}

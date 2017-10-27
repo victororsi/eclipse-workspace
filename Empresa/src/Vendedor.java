@@ -1,0 +1,31 @@
+
+public class Vendedor extends Funcionario {
+
+	@Override
+	public boolean calculaSalario(double horaExtra) {
+		if (this.salario <= 1300 ) {
+			this.valorHorasExtra = (this.salario/30) / 8 * horaExtra;
+			this.salario = this.salario - (this.salario*0.06) + valorHorasExtra;
+			return true;
+			} else {
+				System.out.println("Valores inválidos");
+				return false;
+			}
+	}
+
+	@Override
+	public boolean calculaSalario() {
+		if(this.salario <= 1300) {
+			this.salario = this.salario - (this.salario * 0.06);
+			return true;
+			} else {
+				System.out.println("Valores inválidos");
+				return false;
+			}
+		}
+
+	@Override
+	public double bonifica() {
+		return this.salario * 0.10;
+	}
+}

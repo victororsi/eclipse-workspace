@@ -1,0 +1,13 @@
+
+public class Programa {
+	public static void main(String[] args) {
+		Equipe equipea = new Equipe();
+		equipea.setNome("Palmeiras");
+		equipea.setCidade("SP");
+		
+		
+		System.out.println(equipea.getNome());
+		
+		
+	}
+}

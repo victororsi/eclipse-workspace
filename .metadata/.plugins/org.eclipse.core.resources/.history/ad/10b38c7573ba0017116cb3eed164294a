@@ -1,0 +1,50 @@
+import javax.management.RuntimeErrorException;
+
+public class ContaCorrente extends Conta implements ServicoBancario{
+	
+	public double getSaldo() {
+		return this.saldo -= 0.10;
+	}
+	
+	public void depositar(double valor) {
+		if (valor > 0) {
+			this.saldo = valor;
+			this.saldo -= 0.10;
+		}
+	}
+	
+	public void sacar(double valor)  {
+		if((this.saldo >= valor) && (valor<2000) && (valor>0))  {
+			this.saldo -= valor;
+			this.saldo -= 0.10;
+			System.out.println("Saque efetuado de R$" + valor);
+			System.out.println("Saldo: R$" + this.saldo);
+		} if ((this.saldo < valor) && (valor<2000)&& (valor>0))  {
+			throw new SaldoInsulficienteException ("Saldo Insuficiente!");
+		
+		}
+		if(valor <= 0) {
+			throw new IllegalArgumentException("Valor negativo!!!");
+		}
+		
+		if (valor > 2000) {
+			throw new SaqueExcedidoException("Valor de Saque Excedido, até R$ 2000");
+			
+		}
+		
+											
+	}
+	
+	public boolean transferir(Conta contaDestino, double valor){
+		if(this.saldo >= valor){
+			this.saldo -= valor;
+			this.saldo -= 0.10;
+			contaDestino.saldo += valor;
+			return true;
+		} else {
+			return false;
+		}					
+		
+	}
+	
+}

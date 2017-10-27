@@ -1,0 +1,10 @@
+
+public class ControleDeBonificacao {
+	private double totalDeBonus;
+	
+	public double calculaTotalDeBonus(double valor) {
+		return this.totalDeBonus = this.totalDeBonus + valor;
+		
+	}
+
+}

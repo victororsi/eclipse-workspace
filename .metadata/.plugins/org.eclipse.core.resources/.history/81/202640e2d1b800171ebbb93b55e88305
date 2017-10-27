@@ -1,0 +1,15 @@
+
+public class Fornecedor {
+	private string cnpj;
+
+	public string getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(string cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	
+
+}

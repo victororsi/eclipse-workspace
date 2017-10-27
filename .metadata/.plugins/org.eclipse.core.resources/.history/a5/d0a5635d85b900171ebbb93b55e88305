@@ -1,0 +1,60 @@
+
+public class Conta {
+	protected int numeroConta;
+	protected Cliente titular;
+	protected double saldo;
+	
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+	public Cliente getTitular() {
+		return titular;
+	}
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void depositar(double valor) {
+		if(valor > 0) {
+			this.saldo = valor;
+	}
+	
+	}
+	
+	public boolean sacar (double valor) {
+		if (valor > 0) {
+			saldo -= valor;
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean transferir (Conta contaDestino, double valor) {
+		if (saldo >=valor) {
+			saldo -= valor;
+			contaDestino.saldo += valor;
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public void imprime() {
+		
+	System.out.println("Numero da conta: " + numeroConta);
+	System.out.println("Nome do titular: " + titular.getNome());
+	System.out.println("CPF: " + titular.getCpf());
+	System.out.println("Saldo " + saldo);
+	System.out.println("");
+
+		
+	}
+	
+}

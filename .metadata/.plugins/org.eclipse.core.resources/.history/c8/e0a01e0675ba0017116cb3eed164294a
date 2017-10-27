@@ -1,0 +1,20 @@
+
+public class SaqueExcedidoException extends RuntimeException {
+	
+	public SaqueExcedidoException (String message) {
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Informe um valor do tipo inteiro");
+		
+		int valor;
+		
+		try {
+			valor = teclado;
+			System.out.println("Você digital: " + valor);
+		} catch (java.util.InputMismatchException e){
+			System.out.println("Valor Digitado não é inteiro");
+		}
+	}
+
+
+}

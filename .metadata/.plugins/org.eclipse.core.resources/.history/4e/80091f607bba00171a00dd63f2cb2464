@@ -1,0 +1,16 @@
+
+public class Filme {
+
+	int codigo;
+	String nome;
+	double valor;
+	boolean disponivel;
+	
+	void retirar(){
+		disponivel = false;
+	}
+	void devolver(){
+		disponivel = true;
+	}
+
+}

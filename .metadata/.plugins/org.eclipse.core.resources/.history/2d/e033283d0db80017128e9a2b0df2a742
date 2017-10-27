@@ -1,0 +1,13 @@
+
+public class Programa {
+	public static void main(String[] args) {
+		Cliente cliente = new Cliente();
+		cliente.setNome("Eduardo");
+		cliente.setCpf("210.915.788-14");
+		
+		Conta conta = new Conta();
+		conta.setNumeroConta(123);
+		conta.setTitular(cliente);
+		
+	}
+}

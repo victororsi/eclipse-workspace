@@ -1,0 +1,15 @@
+
+public class Programa {
+	public static void main(String[] args) {
+		Cliente cliente1 = new Cliente();
+		cliente1.setNome("Eduardo");
+		cliente1.setCpf("210.915.788-14");
+		
+		ContaCorrente contacorrente = new ContaCorrente();
+		contacorrente.numeroConta = 123;
+		contacorrente.titular = cliente1;
+		contacorrente.depositar(1000.0);
+		
+		System.out.println(contacorrente.getSaldo());
+	}
+}

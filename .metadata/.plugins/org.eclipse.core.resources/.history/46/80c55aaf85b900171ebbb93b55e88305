@@ -1,0 +1,11 @@
+
+public class ContaPoupanca extends Conta {
+
+	@Override
+	public void depositar(double valor) {
+		if(valor > 0) {
+			this.saldo = valor;
+	}
+	}
+
+}
