@@ -20,7 +20,7 @@ public class Programa {
 		
 		
 		try {
-			cc.sacar(2900);
+			cc.sacar(2100);
 		} catch (SaldoInsuficienteException e) {
 			System.out.println(e.getMessage());
 		} catch (IllegalArgumentException e) {
