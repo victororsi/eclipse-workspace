@@ -24,7 +24,7 @@ public class Equipe extends Jogador{
 		this.tecnico = tecnico;
 	}
 	public Jogador[] getJogador() {
-		return jogadores;jndjnfjkdf
+		return jogadores;
 	}
 	public void setJogador(Jogador[] jogadores) {
 		this.jogadores = jogadores;
