@@ -16,9 +16,6 @@ public class Programa {
 		cc.setTitular(c1);
 		cc.depositar(5000.0);
 		
-		
-		
-		
 		try {
 			cc.sacar(2100);
 		} catch (SaldoInsuficienteException e) {
