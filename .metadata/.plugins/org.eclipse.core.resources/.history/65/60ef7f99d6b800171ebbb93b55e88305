@@ -1,9 +1,0 @@
-
-public class Equipe {
-	private String nome;
-	private String cidade;
-	private Tecnico tecnico;
-	private Jogador jogador[] = new jogador[11];
-
-	
-}
