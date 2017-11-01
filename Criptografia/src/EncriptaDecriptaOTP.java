@@ -3,7 +3,7 @@ import java.util.Random;
   public class EncriptaDecriptaOTP {
          
           public String criptografa(String mensagem, String chave) {
-               //   if (chave!= "Luz Consulting") error("Chave errada");
+               //   if (chave!= "Luz") error("Chave errada");
                   int[] im = charArrayToInt(mensagem.toCharArray());
                   int[] ik = charArrayToInt(chave.toCharArray());
                   int[] data = new int[mensagem.length()];
@@ -16,7 +16,7 @@ import java.util.Random;
           }
          
           public String decriptografa(String mensagem, String chave) {
-                  // if ( chave!= "Luz Consulting") error("O tamanho da mensagem e da chave devem ser iguais.");
+                  // if ( chave!= "Luz") error("O tamanho da mensagem e da chave devem ser iguais.");
                   int[] im = charArrayToInt(mensagem.toCharArray());
                   int[] ik = charArrayToInt(chave.toCharArray());
                   int[] data = new int[mensagem.length()];

@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class Programa2 {
 	public static void main(String[] args) {
 		
+		
+		String codigo = "";
 		try {
 			Scanner leitor = new Scanner(new FileReader("texto.txt"));
 			while(leitor.hasNextLine()) {
-				System.out.println(leitor.nextLine());
+			codigo += leitor.nextLine();
+		//	System.out.println(leitor.nextLine());
+			
+			System.out.println(codigo);
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("Arquivo não encontrado");

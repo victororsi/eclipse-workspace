@@ -184,7 +184,8 @@ public class Programa {
 			System.out.println(j.nome + " - " + j.getPosicao());
 		}
 		
-		
+	     String menssagem = "Luz TESTE /n";
+	     menssagem += "linha2 /n";
 		
 		System.out.println("");
 		System.out.println("----------------- Informações " + equipe2.getNome() +" -----------------");
@@ -199,6 +200,8 @@ public class Programa {
 		System.out.println("------------------- Escalação "+ equipe2.getNome() + " -------------------");
 		for (Jogador j : equipe2.getJogador()) {
 			System.out.println(j.nome + " - " + j.getPosicao());
+			
+			System.out.println(menssagem);
 		}
 	
 	}
